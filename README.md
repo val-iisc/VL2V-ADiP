@@ -1,8 +1,16 @@
-# VL2V-ADiP: Vision-Language to Vision - Align, Distill, Predict
+# Leveraging Vision-Language Models for Improving Domain Generalization in Image Classification
 
-## Preparation
+This repository contains the code for the paper [Leveraging Vision-Language Models for Improving Domain Generalization in Image Classification](https://arxiv.org/abs/2310.08255) by Sravanti Addepalli*, Ashish Ramayee Asokan*, Lakshay Sharma, and R. Venkatesh Babu.
 
-### Dependencies
+TLDR: We propose to leverage the superior generalization ability of Vision-Language models to improve OOD generalization in image classification. We obtain SOTA results in both black box and white box settings of the Vision-Language model!
+
+### Abstract
+
+Vision-Language Models (VLMs) such as CLIP are trained on large amounts of image-text pairs, resulting in remarkable generalization across several data distributions. The prohibitively expensive training and data collection/curation costs of these models make them valuable Intellectual Property (IP) for organizations. This motivates a vendor-client paradigm, where a vendor trains a large-scale VLM and grants only input-output access to clients on a pay-per-query basis in a black-box setting. The client aims to minimize inference cost by distilling the VLM to a student model using the limited available task-specific data, and further deploying this student model in the downstream application. While naive distillation largely improves the In-Domain (ID) accuracy of the student, it fails to transfer the superior out-of-distribution (OOD) generalization of the VLM teacher using the limited available labeled images. To mitigate this, we propose Vision-Language to Vision-Align, Distill, Predict (VL2V-ADiP), which first aligns the vision and language modalities of the teacher model with the vision modality of a pre-trained student model, and further distills the aligned VLM embeddings to the student. This maximally retains the pre-trained features of the student, while also incorporating the rich representations of the VLM image encoder and the superior generalization of the text embeddings. The proposed approach achieves state-of-the-art results on the standard Domain Generalization benchmarks in a black-box teacher setting, and also when weights of the VLM are accessible.
+
+## Code
+
+### Installing dependencies
 
 ```sh
 pip install -r requirements.txt
