@@ -1,13 +1,13 @@
-# Nerfies
+# VL2V-ADiP
 
-This is the repository that contains source code for the [C-SFTrans website](https://val.cds.iisc.ac.in/C-SFTrans/).
+This is the repository that contains source code for the [VL2V-ADiP website](http://val.cds.iisc.ac.in/VL2V-ADiP/).
 
-If you find Nerfies useful for your work please cite:
+If you find our work useful in your research, please cite:
 ```
-@article{sanyal2024aligning,
-  author    = {Sanyal, Sunandini and Asokan, Ashish Ramayee and Bhambri, Suvaansh and Kulkarni, Akshay and Kundu, Jogendra Nath and Babu, R Venkatesh},
-  title     = {Aligning Non-Causal Factors for Transformer-based Source-Free Domain Adaptation},
-  journal   = {WACV},
+@article{addepalli2024leveraging,
+  author    = {Addepalli, Sravanti and Asokan, Ashish Ramayee and Sharma, Lakshay and Babu, R Venkatesh},
+  title     = {Leveraging Vision-Language Models for Improving Domain Generalization in Image Classification},
+  journal   = {CVPR},
   year      = {2024},
 }
 ```
